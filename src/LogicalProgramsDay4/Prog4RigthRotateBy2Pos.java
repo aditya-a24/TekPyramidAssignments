@@ -1,6 +1,8 @@
 package LogicalProgramsDay4;
 
-public class Prog3LeftRotateBy2Pos {
+import javax.xml.transform.Source;
+
+public class Prog4RigthRotateBy2Pos {
     public static void main(String[] args) {
         int[] a = {1, 2, 3, 4, 5};
 
@@ -17,11 +19,10 @@ public class Prog3LeftRotateBy2Pos {
 
         getReverse(a, 0, a.length-1);
 
-        getReverse(a, 0, a.length-r-1);
+        getReverse(a, r, a.length-1);
 
-        getReverse(a, a.length-r, a.length-1);
-
-        System.out.println("Left Rotation of array by 2 position: ");
+        getReverse(a, 0, r-1);
+        System.out.println("Right Rotation of array by 2 position: ");
         for(int i : a){
             System.out.print(i + " ");
         }
